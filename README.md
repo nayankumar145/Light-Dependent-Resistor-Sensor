@@ -10,7 +10,9 @@ int x; //Variable to store sensor reading
 int led = 13; // LED is connected to pin 13
 
 ▪ ldr is assigned to pin 7, where the LDR sensor is connected. 
+
 ▪ led is assigned to pin 13, where the LED is connected. 
+
 ▪ x is used to store the value read from the sensor. 
 
 2.Setup Function (Runs Once at Start) 
@@ -29,7 +31,9 @@ pinMode(13, OUTPUT); // Sets pin 13 as output (LED)
 
 ▪ Serial.begin(9600); starts serial communication so we can see sensor values on the 
 Serial Monitor. 
+
 ▪ pinMode(7, INPUT); sets pin 7 as an input to read the sensor. 
+
 ▪ pinMode(13, OUTPUT); sets pin 13 as an output to control the LED
 
 3.Loop Function (Runs Continuously) 
@@ -44,6 +48,7 @@ Serial.println(x); // Prints the value in Serial Monitor
 
 ▪ The LDR sensor is read using digitalRead(7);. It gives 1 (HIGH) if it's dark and 0 (LOW) 
 if it's bright. 
+
 ▪ Serial.println(x); prints the value on the Serial Monitor to check the sensor’s reading. 
 
 4.Controlling the LED 
