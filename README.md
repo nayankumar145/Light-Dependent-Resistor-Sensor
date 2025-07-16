@@ -76,4 +76,5 @@ digitalWrite(13, LOW); // Turn OFF the LED
 } 
 
 ▪ If it’s dark, the sensor outputs 1 (HIGH), and the LED turns ON. 
+
 ▪ If it’s bright, the sensor outputs 0 (LOW), and the LED turns OFF.
