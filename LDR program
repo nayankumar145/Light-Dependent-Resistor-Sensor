@@ -1,0 +1,24 @@
+int ldr = 7;
+int x;
+int led = 13;
+void setup() 
+{
+ Serial.begin(9600);
+ pinMode(7, INPUT);
+ pinMode(13, OUTPUT);
+}
+void loop()
+{ // if there is no light then the sensor value will be 1 else the value will be 0 .
+ x = digitalRead(7);
+ Serial.println(x);
+// it's dark
+ if(x == HIGH)
+ {
+ digitalWrite(13, HIGH);
+ }
+ // it's bright
+ if(x == LOW)
+ {
+ digitalWrite(13, LOW);
+ }
+}
